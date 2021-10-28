@@ -1,0 +1,151 @@
+@media (min-width: 1024px) and (max-width: 1184px) {
+  .container {
+    width: 100%;
+    /* background: yellow; */
+  }
+
+  #header {
+    width: 100%;
+    height: 50px;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-list {
+    flex: 1 0 20%;
+    margin: 5px;
+  }
+  .menu .exclude {
+    display: flex;
+  }
+
+  .container-carrousel {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 100%;
+    /* background: red; */
+  }
+  #header {
+    width: 100%;
+  }
+
+  header li span {
+    display: none;
+  }
+
+  header li:nth-child(4) {
+    display: flex;
+  }
+
+  .fg--search {
+    width: 200px;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-list {
+    flex: 1 20%;
+    margin: 5px;
+  }
+
+  .menu .exclude {
+    display: flex;
+  }
+
+  .paris-p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    height: 20px;
+  }
+  .container {
+    width: 100%;
+    /* background: pink; */
+  }
+  header img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fg--search {
+    display: none;
+  }
+  header ul {
+    display: none;
+  }
+
+  .icone-header {
+    display: flex;
+  }
+
+  .menu {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    background: white;
+    margin-bottom: 10px;
+  }
+  .menu-list {
+    display: flex;
+    flex: 1;
+    white-space: nowrap;
+  }
+  .menu .exclude {
+    display: flex;
+  }
+  main h1 {
+    font-size: 32px;
+    padding-top: 5px;
+    margin-top: 20px;
+  }
+  .menu .col-1 {
+    width: 100%;
+  }
+  .col-2 {
+    display: none;
+  }
+
+  .paris-p {
+    width: 100%;
+  }
+  .container-carrousel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .se-divertir {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .caroussel {
+    width: 100%;
+  }
+
+  .ul-caroussel {
+    width: 90%;
+    margin: 0 20px;
+  }
+} ;
