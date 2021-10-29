@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- logo tripadvisor dans onglet -->
     <link
       rel="shortcut icon"
       type="image/x-icon"
       href="./assets/img/tripadvisor-logo-circle-owl-icon-black-green-858x858.png"
     />
     <title>Tripadvisor</title>
+
+    <!-- import du style et font -->
+
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,10 +23,18 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <link rel="stylesheet" href="./assets/css/media.css" />
+
+    <!-- import des icones -->
     <script
       src="https://kit.fontawesome.com/1ebef2f857.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- import fichier JS -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- import Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
@@ -39,7 +52,38 @@
           <li><i class="fas fa-pen"></i><span>&nbsp;Avis</span></li>
           <li><i class="far fa-heart"></i><span>&nbsp;Voyage</span></li>
           <li><i class="far fa-bell"></i><span>&nbsp;Alertes</span></li>
-          <li id="connectez-vous">Connectez-vous</li>
+
+          <li id="connectez-vous">
+            <!-- display modal via buttton -->
+
+            <button id="display-modal" class="button-connect">
+              Connectez-vous
+            </button>
+            <!-- Modal -->
+            <div class="hidden-modal" id="modal">
+              <!-- Modal Content -->
+              <div class="form-container">
+                <button id="remove-modal" class="button-x">X</button>
+                <p>Formulaire</p>
+                <form action="" id="contact-form">
+                  <input
+                    type="text"
+                    name=""
+                    id="firstname"
+                    placeholder="Prénom"
+                  />
+                  <input type="text" name="" id="lastname" placeholder="Nom" />
+                  <input type="email" name="" id="email" placeholder="Email" />
+                  <textarea
+                    name=""
+                    id="message"
+                    placeholder="Ecrivez votre message..."
+                  ></textarea>
+                  <input type="submit" value="Envoyer le formulaire" />
+                </form>
+              </div>
+            </div>
+          </li>
         </ul>
         <div class="icone-header"><i class="fa fa-search"></i></div>
       </div>

@@ -108,6 +108,116 @@ header li:hover {
   padding: 10px;
 }
 
+/* Bouton Connectez-vous */
+
+.button-connect {
+  background-color: inherit;
+  border: inherit;
+  color: inherit;
+  font-size: inherit;
+}
+
+.button-connect:hover {
+  cursor: pointer;
+}
+/* MODAL */
+
+.hidden-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.display-modal {
+  display: flex;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+}
+
+.button-x {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border: none;
+  font-size: 30px;
+  background: yellow;
+  box-sizing: border-box;
+  width: 30px;
+}
+
+.button-x:hover {
+  cursor: pointer;
+}
+.form-container {
+  background-color: white;
+  margin: 100px auto;
+  padding: 30px 70px;
+  border: 1pxpx black solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header div p {
+  color: black;
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 0;
+  border: 2px solid black;
+  width: 260px;
+  height: 30px;
+  font-family: "Trip Sans";
+  font-size: 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form textarea {
+  border: 2px solid blue;
+  border-radius: none;
+  width: 260px;
+  height: 112px;
+  margin: 10px 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+form input[type="submit"] {
+  background-color: black;
+  color: white;
+  width: 260px;
+  height: 30px;
+  /* box-sizing: border-box; */
+  text-align: center;
+}
+form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
 h1 {
   font-weight: bold;
   font-size: 54px;
