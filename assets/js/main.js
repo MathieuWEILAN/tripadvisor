@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
         message: document.getElementById("message").value,
       };
       console.log("ok");
-      const response = await axios.post("http://localhost:3000/", data);
+      const response = await axios.post(
+        "https://back-end-tripadvisor.herokuapp.com/",
+        data
+      );
     });
 });
